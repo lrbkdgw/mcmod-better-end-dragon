@@ -102,6 +102,18 @@ public final class NetherworldGenerator {
                 }
             }
         }
+        // railings around the platform, leaving the road itself open on both ends
+        for (int x = x0 - 6; x <= x0 + 6; x++) {
+            set(level, x, FLOOR_Y + 1, -7, RAILING);
+            set(level, x, FLOOR_Y + 1, 7, RAILING);
+        }
+        for (int z = -7; z <= 7; z++) {
+            if (Math.abs(z) <= 3) {
+                continue; // the road runs through here
+            }
+            set(level, x0 - 6, FLOOR_Y + 1, z, RAILING);
+            set(level, x0 + 6, FLOOR_Y + 1, z, RAILING);
+        }
         // corner lights
         for (int dx : new int[]{-6, 6}) {
             for (int dz : new int[]{-7, 7}) {
@@ -140,18 +152,19 @@ public final class NetherworldGenerator {
                 }
             }
         }
-        // top platform (with a hole for the ladder)
+        // top platform (with a hole for the ladder). Iron blocks so the beacon actually has a base.
         for (int dx = -2; dx <= 2; dx++) {
             for (int dz = -2; dz <= 2; dz++) {
                 if (dx == 0 && dz == 2) {
                     continue;
                 }
-                set(level, x0 + dx, top, dz, FLOOR);
+                set(level, x0 + dx, top, dz, Blocks.IRON_BLOCK.defaultBlockState());
             }
         }
-        // ladder
+        // ladder - it has to reach one block above the platform so that the player can step off it
         BlockState ladder = Blocks.LADDER.defaultBlockState().setValue(LadderBlock.FACING, Direction.SOUTH);
-        for (int y = FLOOR_Y + 1; y <= top; y++) {
+        set(level, x0, top + 1, 1, PILLAR); // the ladder's top anchor
+        for (int y = FLOOR_Y + 1; y <= top + 1; y++) {
             set(level, x0, y, 2, ladder);
         }
         // lantern crown

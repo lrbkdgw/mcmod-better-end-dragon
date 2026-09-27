@@ -108,7 +108,8 @@ public final class DragonEvents {
         Entity attacker = source.getEntity();
 
         // ----- damage dealt by the empowered dragon: 150 %, plus the dive-bomb rider
-        if (attacker instanceof EnderDragon dragon && DragonState.isEnhanced(dragon)) {
+        if (attacker instanceof EnderDragon dragon && DragonState.isEnhanced(dragon)
+                && !EnhancedDragonLogic.isIslandBlastInProgress()) {
             event.setAmount(event.getAmount() * 1.5F);
             if (target instanceof Player player
                     && dragon.getPhaseManager().getCurrentPhase().getPhase() == EnderDragonPhase.CHARGING_PLAYER) {

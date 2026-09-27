@@ -49,6 +49,13 @@ public final class EnhancedDragonLogic {
     public static final int DR_DISABLE_TICKS = 400;       // 20 s
     public static final int RATTLE_LENGTH = 400;          // 20 s
 
+    /**
+     * Set while the island shockwave is being applied. The generic "the empowered dragon deals
+     * 150 % damage" rule must not apply to it, because the shockwave damage is already a fixed
+     * value given by the design (50 / 10).
+     */
+    private static boolean islandBlastInProgress;
+
     private static final UUID HEALTH_MODIFIER_ID = UUID.fromString("5e2f1f5c-8e1f-4f6c-9d0a-7c1b4f5a2d31");
     private static final String HEALTH_MODIFIER_NAME = "betterenddragon.empowered_health";
 
@@ -260,15 +267,25 @@ public final class EnhancedDragonLogic {
         DamageSource source = level.damageSources().explosion(dragon, dragon);
         AABB box = new AABB(origin.getX() - ISLAND_RADIUS, level.getMinBuildHeight(), origin.getZ() - ISLAND_RADIUS,
                 origin.getX() + ISLAND_RADIUS, level.getMaxBuildHeight(), origin.getZ() + ISLAND_RADIUS);
-        for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, box)) {
-            if (entity instanceof EnderDragon || DragonState.isEnhancedMite(entity)) {
-                continue;
+        islandBlastInProgress = true;
+        try {
+            for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, box)) {
+                if (entity instanceof EnderDragon || DragonState.isEnhancedMite(entity)) {
+                    continue;
+                }
+                if (entity instanceof Player player && (player.isCreative() || player.isSpectator())) {
+                    continue;
+                }
+                entity.hurt(source, damage);
             }
-            if (entity instanceof Player player && (player.isCreative() || player.isSpectator())) {
-                continue;
-            }
-            entity.hurt(source, damage);
+        } finally {
+            islandBlastInProgress = false;
         }
+    }
+
+    /** @return {@code true} while {@link #islandBlast} is handing out its fixed damage. */
+    public static boolean isIslandBlastInProgress() {
+        return islandBlastInProgress;
     }
 
     private static void islandBlastVisuals(ServerLevel level, EnderDragon dragon) {
