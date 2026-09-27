@@ -1,0 +1,1 @@
+{"type":"minecraft:shaped","pattern":["SDS","DCD","SDS"],"key":{"S":{"item":"minecraft:nether_star"},"D":{"item":"minecraft:diamond_block"},"C":{"item":"minecraft:end_crystal"}},"result":{"item":"betterenddragon:wither_crystal","count":1}}

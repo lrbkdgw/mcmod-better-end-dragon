@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="betterenddragon"
+version="1.0.0"
+displayName="Better End Dragon"
+authors="Arena"
+description='''A four-crystal ritual, two-phase enhanced Ender Dragon and Netherworld reward journey.'''
+[[dependencies.betterenddragon]]
+modId="neoforge"
+type="required"
+versionRange="[47.1,48)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.betterenddragon]]
+modId="minecraft"
+type="required"
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

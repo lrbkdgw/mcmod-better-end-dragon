@@ -1,0 +1,27 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.gradle.userdev' version '7.1.18'
+}
+
+version = '1.0.0'
+group = 'com.example.betterenddragon'
+base { archivesName = 'better-end-dragon' }
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft { accessTransformers.file('src/main/resources/META-INF/accesstransformer.cfg') }
+
+repositories { mavenCentral() }
+
+dependencies { implementation "net.neoforged:forge:1.20.1-47.1.106" }
+
+runs {
+    configureEach { workingDirectory project.file('run'); property 'forge.logging.console.level', 'debug'; mods { betterenddragon { source sourceSets.main } } }
+    client {}
+    server {}
+}
+
+jar { manifest { attributes(['Specification-Title':'Better End Dragon', 'Specification-Vendor':'Arena', 'Specification-Version': '1', 'Implementation-Title': project.name, 'Implementation-Version': project.version]) } }
+
+publishing { publications { register('mavenJava', MavenPublication) { from components.java } } repositories { } }
