@@ -130,7 +130,7 @@ public final class DragonCombat {
         if (dragon.tickCount % 20 == 0 && level.getNearestPlayer(dragon, DESPAWN_RANGE) == null) {
             // no player around: vanish, but stay armed so the fight brings the
             // empowered dragon back instead of a normal one
-            EndFightState.get(level).arm();
+            EndFightState.get(level).armPermanent();
             dragon.discard();
             return;
         }

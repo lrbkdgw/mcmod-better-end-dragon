@@ -60,6 +60,13 @@ public class EndFightState extends SavedData {
         this.setDirty();
     }
 
+    /** Armed without a timeout, used when the dragon vanished on its own. */
+    public void armPermanent() {
+        this.pendingEnhanced = true;
+        this.pendingTicks = 0;
+        this.setDirty();
+    }
+
     public void disarm() {
         this.pendingEnhanced = false;
         this.pendingTicks = 0;
