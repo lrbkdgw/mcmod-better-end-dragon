@@ -1,0 +1,32 @@
+{
+  "itemGroup.betterenddragon.main": "更强末影龙",
+
+  "item.betterenddragon.wither_crystal": "凋灵水晶",
+  "item.betterenddragon.nether_crystal": "下界水晶",
+  "item.betterenddragon.deep_crystal": "深谙水晶",
+  "item.betterenddragon.truth_crystal": "真理水晶",
+
+  "block.betterenddragon.keep_inventory_device": "魂锚装置",
+  "block.betterenddragon.creative_flight_device": "暮翼装置",
+  "block.betterenddragon.return_home_device": "归乡装置",
+
+  "entity.betterenddragon.special_end_crystal": "特殊末影水晶",
+  "entity.betterenddragon.empowered_dragon.stage_one": "强化末影龙",
+  "entity.betterenddragon.empowered_dragon.stage_two": "强化末影龙 · 第二阶段",
+  "entity.betterenddragon.empowered_endermite": "强化末影螨",
+
+  "item.betterenddragon.potion.resistance": "不坏意志药水",
+  "item.betterenddragon.potion.regeneration": "无尽愈合药水",
+  "item.betterenddragon.potion.strength": "湮灭之力药水",
+
+  "message.betterenddragon.awaken": "四枚水晶共鸣……更强大的存在回应了召唤。",
+  "message.betterenddragon.stage_two": "末影龙再度复苏——第二阶段开始！",
+  "message.betterenddragon.last_stand": "末影龙拒绝死去……",
+  "message.betterenddragon.finale": "一阵刺目的爆炸撕裂了整座主岛。",
+  "message.betterenddragon.netherworld_welcome": "你在冥界的长路上苏醒。",
+  "message.betterenddragon.keep_inventory_on": "魂锚嗡鸣——死亡不掉落已强制开启。",
+  "message.betterenddragon.flight_granted": "暮翼展开——你获得了飞行能力。",
+  "message.betterenddragon.returned_home": "你回到了主世界出生点。",
+
+  "death.attack.betterenddragon.dragon_finale": "%1$s 被末影龙的终焉爆炸吞没"
+}

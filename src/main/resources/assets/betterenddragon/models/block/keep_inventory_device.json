@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "betterenddragon:block/keep_inventory_device"
+  }
+}

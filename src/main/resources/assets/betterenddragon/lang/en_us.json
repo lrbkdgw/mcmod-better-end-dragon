@@ -1,0 +1,32 @@
+{
+  "itemGroup.betterenddragon.main": "Better End Dragon",
+
+  "item.betterenddragon.wither_crystal": "Wither Crystal",
+  "item.betterenddragon.nether_crystal": "Nether Crystal",
+  "item.betterenddragon.deep_crystal": "Deep Crystal",
+  "item.betterenddragon.truth_crystal": "Truth Crystal",
+
+  "block.betterenddragon.keep_inventory_device": "Soul Anchor Device",
+  "block.betterenddragon.creative_flight_device": "Wings of Dusk Device",
+  "block.betterenddragon.return_home_device": "Homeward Device",
+
+  "entity.betterenddragon.special_end_crystal": "Special End Crystal",
+  "entity.betterenddragon.empowered_dragon.stage_one": "Empowered Ender Dragon",
+  "entity.betterenddragon.empowered_dragon.stage_two": "Empowered Ender Dragon - Second Phase",
+  "entity.betterenddragon.empowered_endermite": "Empowered Endermite",
+
+  "item.betterenddragon.potion.resistance": "Potion of Unbreakable Will",
+  "item.betterenddragon.potion.regeneration": "Potion of Endless Mending",
+  "item.betterenddragon.potion.strength": "Potion of Annihilation",
+
+  "message.betterenddragon.awaken": "The four crystals resonate... something far stronger answers the call.",
+  "message.betterenddragon.stage_two": "The Ender Dragon rises again - the second phase begins!",
+  "message.betterenddragon.last_stand": "The dragon refuses to die...",
+  "message.betterenddragon.finale": "A blinding blast tears the island apart.",
+  "message.betterenddragon.netherworld_welcome": "You awaken on the road of the Netherworld.",
+  "message.betterenddragon.keep_inventory_on": "The Soul Anchor hums - keepInventory is now enabled.",
+  "message.betterenddragon.flight_granted": "The Wings of Dusk unfold - you may now fly.",
+  "message.betterenddragon.returned_home": "You return to the world spawn.",
+
+  "death.attack.betterenddragon.dragon_finale": "%1$s was consumed by the dragon's final blast"
+}

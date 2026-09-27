@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "betterenddragon:block/keep_inventory_device"
+    }
+  }
+}
