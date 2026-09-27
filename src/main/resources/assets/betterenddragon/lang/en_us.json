@@ -1,0 +1,36 @@
+{
+  "itemGroup.betterenddragon": "Better End Dragon",
+
+  "item.betterenddragon.wither_crystal": "Wither Crystal",
+  "item.betterenddragon.nether_crystal": "Nether Crystal",
+  "item.betterenddragon.abyssal_crystal": "Profound Crystal",
+  "item.betterenddragon.truth_crystal": "Truth Crystal",
+
+  "block.betterenddragon.keep_inventory_device": "Beacon Device of Keeping",
+  "block.betterenddragon.creative_flight_device": "Beacon Device of Flight",
+  "block.betterenddragon.return_device": "Beacon Device of Returning",
+
+  "entity.betterenddragon.wither_crystal": "Wither Crystal",
+  "entity.betterenddragon.nether_crystal": "Nether Crystal",
+  "entity.betterenddragon.abyssal_crystal": "Profound Crystal",
+  "entity.betterenddragon.truth_crystal": "Truth Crystal",
+  "entity.betterenddragon.abyssal_endermite": "Empowered Endermite",
+  "entity.betterenddragon.enhanced_ender_dragon": "Empowered Ender Dragon",
+
+  "item.betterenddragon.potion.resistance": "Potion of Absolute Resistance",
+  "item.betterenddragon.potion.regeneration": "Potion of Endless Regeneration",
+  "item.betterenddragon.potion.strength": "Potion of Boundless Strength",
+
+  "message.betterenddragon.stage1": "The Empowered Ender Dragon awakens! (Phase 1)",
+  "message.betterenddragon.stage2": "The dragon rises again, stronger than before! (Phase 2)",
+  "message.betterenddragon.undying": "The dragon refuses to die...",
+  "message.betterenddragon.device.keep_inventory": "Keep inventory has been enabled forever.",
+  "message.betterenddragon.device.flight": "You have been granted creative flight.",
+  "message.betterenddragon.device.return": "The Underworld releases you.",
+  "message.betterenddragon.underworld.welcome": "You awake in the Underworld.",
+  "message.betterenddragon.underworld.missing": "The Underworld dimension could not be found.",
+
+  "screen.betterenddragon.death.title": "You died!",
+  "screen.betterenddragon.death.subtitle": "...but death is not the end.",
+  "screen.betterenddragon.death.respawn": "Respawn"
+}

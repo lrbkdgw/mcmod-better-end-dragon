@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NRN",
+    "RER",
+    "NRN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_block"
+    },
+    "R": {
+      "item": "minecraft:netherrack"
+    },
+    "E": {
+      "item": "minecraft:end_crystal"
+    }
+  },
+  "result": {
+    "item": "betterenddragon:nether_crystal"
+  }
+}

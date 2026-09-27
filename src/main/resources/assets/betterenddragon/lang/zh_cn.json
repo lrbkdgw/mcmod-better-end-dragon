@@ -1,0 +1,36 @@
+{
+  "itemGroup.betterenddragon": "更强的末影龙",
+
+  "item.betterenddragon.wither_crystal": "凋灵水晶",
+  "item.betterenddragon.nether_crystal": "下界水晶",
+  "item.betterenddragon.abyssal_crystal": "深谙水晶",
+  "item.betterenddragon.truth_crystal": "真理水晶",
+
+  "block.betterenddragon.keep_inventory_device": "永存装置",
+  "block.betterenddragon.creative_flight_device": "翱翔装置",
+  "block.betterenddragon.return_device": "归乡装置",
+
+  "entity.betterenddragon.wither_crystal": "凋灵水晶",
+  "entity.betterenddragon.nether_crystal": "下界水晶",
+  "entity.betterenddragon.abyssal_crystal": "深谙水晶",
+  "entity.betterenddragon.truth_crystal": "真理水晶",
+  "entity.betterenddragon.abyssal_endermite": "强化末影螨",
+  "entity.betterenddragon.enhanced_ender_dragon": "强化末影龙",
+
+  "item.betterenddragon.potion.resistance": "抗性提升药水 V",
+  "item.betterenddragon.potion.regeneration": "生命恢复药水 X",
+  "item.betterenddragon.potion.strength": "力量药水 255",
+
+  "message.betterenddragon.stage1": "强化后的末影龙苏醒了！（第一阶段）",
+  "message.betterenddragon.stage2": "末影龙复活了，变得更加强大！（第二阶段）",
+  "message.betterenddragon.undying": "末影龙拒绝死亡……",
+  "message.betterenddragon.device.keep_inventory": "已强制开启死亡不掉落。",
+  "message.betterenddragon.device.flight": "你获得了创造飞行能力。",
+  "message.betterenddragon.device.return": "冥界放你离开。",
+  "message.betterenddragon.underworld.welcome": "你在冥界中醒来。",
+  "message.betterenddragon.underworld.missing": "未能找到冥界维度。",
+
+  "screen.betterenddragon.death.title": "你死了！",
+  "screen.betterenddragon.death.subtitle": "……但死亡并非终点。",
+  "screen.betterenddragon.death.respawn": "重生"
+}
