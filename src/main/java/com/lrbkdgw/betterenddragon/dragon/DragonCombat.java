@@ -128,6 +128,9 @@ public final class DragonCombat {
         int stage = Math.max(1, data.getInt(DragonData.STAGE));
 
         if (dragon.tickCount % 20 == 0 && level.getNearestPlayer(dragon, DESPAWN_RANGE) == null) {
+            // no player around: vanish, but stay armed so the fight brings the
+            // empowered dragon back instead of a normal one
+            EndFightState.get(level).arm();
             dragon.discard();
             return;
         }
@@ -233,7 +236,7 @@ public final class DragonCombat {
         }
 
         EnderDragon dragon = findEnhancedDragon(level);
-        if (dragon == null || DragonData.stage(dragon) < 2 || DragonData.get(dragon).getInt(DragonData.UNDYING) > 0) {
+        if (dragon == null || DragonData.stage(dragon) < 2) {
             return;
         }
 

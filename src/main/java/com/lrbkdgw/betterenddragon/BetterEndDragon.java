@@ -32,6 +32,7 @@ public class BetterEndDragon {
 
         MinecraftForge.EVENT_BUS.register(DragonEvents.class);
         MinecraftForge.EVENT_BUS.register(PlayerEvents.class);
+        MinecraftForge.EVENT_BUS.register(ModCommands.class);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
